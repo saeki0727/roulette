@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>麻生オープンキャンパス　ルーレット！</title>
+    </head>
+    <body>
+        <h2>麻生オープンキャンパスルーレット</h2>
+
+        <section style="text-align:center;">
+            <form action="avascript:void(0)" name="form" method="post">
+                <p>↓参加者の数を入力してね(※ 半角数字のみ)</p>
+                <input type="number" name="num">
+                <input type="submit" value="値を送信" onclick="setNumList()">
+            </form>
+
+            <input type="button" id="start" name="start" value="スタート" onclick="startBingo()">
+            <input type="button" id="stop" name="stop" value="ストップ" onclick="stopBingo()" style="display:none;">
+            <br>
+            <div id="view" style="text-align:center;"></div>
+            <hr />
+            <div id="out"></div>
+            <hr />
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="bingo.js"></script>
+    </body>
+</html>
